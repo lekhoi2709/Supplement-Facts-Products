@@ -1,0 +1,13 @@
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Received\bin\Debug\Goods_Received.exe.config
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Received\bin\Debug\Goods_Received.exe
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Received\bin\Debug\Goods_Received.pdb
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Received\obj\Debug\Goods_Received.csproj.AssemblyReference.cache
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Received\obj\Debug\Goods_Received.csproj.SuggestedBindingRedirects.cache
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Received\obj\Debug\Goods_Received.Agent_Log_In.resources
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Received\obj\Debug\Goods_Received.Goods_Received_Form.resources
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Received\obj\Debug\Goods_Received.Goods_Receive_Note.resources
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Received\obj\Debug\Goods_Received.Properties.Resources.resources
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Received\obj\Debug\Goods_Received.csproj.GenerateResource.cache
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Received\obj\Debug\Goods_Received.csproj.CoreCompileInputs.cache
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Received\obj\Debug\Goods_Received.exe
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Received\obj\Debug\Goods_Received.pdb
