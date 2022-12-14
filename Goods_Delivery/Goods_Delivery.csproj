@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,14 +47,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Export_Goods.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Export_Goods.Designer.cs">
+      <DependentUpon>Export_Goods.cs</DependentUpon>
     </Compile>
+    <Compile Include="Goods_Delivery_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goods_Delivery_Details.Designer.cs">
+      <DependentUpon>Goods_Delivery_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goods_Delivery_Note.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goods_Delivery_Note.Designer.cs">
+      <DependentUpon>Goods_Delivery_Note.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log_In.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_In.Designer.cs">
+      <DependentUpon>Log_In.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetails.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Export_Goods.resx">
+      <DependentUpon>Export_Goods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goods_Delivery_Details.resx">
+      <DependentUpon>Goods_Delivery_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goods_Delivery_Note.resx">
+      <DependentUpon>Goods_Delivery_Note.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log_In.resx">
+      <DependentUpon>Log_In.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

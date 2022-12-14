@@ -16,7 +16,7 @@ namespace Goods_Received
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Agent_Log_In());
+            Application.Run(new Log_In());
         }
     }
 }

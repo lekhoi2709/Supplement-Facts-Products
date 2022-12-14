@@ -62,34 +62,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Agent_Log_In.cs">
+    <Compile Include="Add_Products_Details.cs" />
+    <Compile Include="Goods_Received_Details.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Agent_Log_In.Designer.cs">
-      <DependentUpon>Agent_Log_In.cs</DependentUpon>
+    <Compile Include="Goods_Received_Details.Designer.cs">
+      <DependentUpon>Goods_Received_Details.cs</DependentUpon>
     </Compile>
-    <Compile Include="Goods_Receive.cs">
+    <Compile Include="Log_In.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Goods_Receive.Designer.cs">
-      <DependentUpon>Goods_Receive.cs</DependentUpon>
+    <Compile Include="Log_In.Designer.cs">
+      <DependentUpon>Log_In.cs</DependentUpon>
     </Compile>
-    <Compile Include="Goods_Receive_Note.cs">
+    <Compile Include="Import_Goods.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Goods_Receive_Note.Designer.cs">
-      <DependentUpon>Goods_Receive_Note.cs</DependentUpon>
+    <Compile Include="Import_Goods.Designer.cs">
+      <DependentUpon>Import_Goods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goods_Received_Note.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goods_Received_Note.Designer.cs">
+      <DependentUpon>Goods_Received_Note.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Agent_Log_In.resx">
-      <DependentUpon>Agent_Log_In.cs</DependentUpon>
+    <EmbeddedResource Include="Goods_Received_Details.resx">
+      <DependentUpon>Goods_Received_Details.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Goods_Receive.resx">
-      <DependentUpon>Goods_Receive.cs</DependentUpon>
+    <EmbeddedResource Include="Log_In.resx">
+      <DependentUpon>Log_In.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Goods_Receive_Note.resx">
-      <DependentUpon>Goods_Receive_Note.cs</DependentUpon>
+    <EmbeddedResource Include="Import_Goods.resx">
+      <DependentUpon>Import_Goods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goods_Received_Note.resx">
+      <DependentUpon>Goods_Received_Note.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,0 +1,14 @@
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Delivery\bin\Debug\Goods_Delivery.exe.config
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Delivery\bin\Debug\Goods_Delivery.exe
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Delivery\bin\Debug\Goods_Delivery.pdb
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Delivery\obj\Debug\Goods_Delivery.csproj.AssemblyReference.cache
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Delivery\obj\Debug\Goods_Delivery.csproj.SuggestedBindingRedirects.cache
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Delivery\obj\Debug\Goods_Delivery.Log_In.resources
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Delivery\obj\Debug\Goods_Delivery.Properties.Resources.resources
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Delivery\obj\Debug\Goods_Delivery.csproj.GenerateResource.cache
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Delivery\obj\Debug\Goods_Delivery.csproj.CoreCompileInputs.cache
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Delivery\obj\Debug\Goods_Delivery.exe
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Delivery\obj\Debug\Goods_Delivery.pdb
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Delivery\obj\Debug\Goods_Delivery.Goods_Delivery_Note.resources
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Delivery\obj\Debug\Goods_Delivery.Goods_Delivery_Details.resources
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Delivery\obj\Debug\Goods_Delivery.Export_Goods.resources

@@ -1,0 +1,10 @@
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Report\bin\Debug\Report.exe.config
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Report\bin\Debug\Report.exe
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Report\bin\Debug\Report.pdb
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Report\obj\Debug\Report.csproj.AssemblyReference.cache
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Report\obj\Debug\Report.csproj.SuggestedBindingRedirects.cache
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Report\obj\Debug\Report.Properties.Resources.resources
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Report\obj\Debug\Report.csproj.GenerateResource.cache
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Report\obj\Debug\Report.csproj.CoreCompileInputs.cache
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Report\obj\Debug\Report.exe
+C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Report\obj\Debug\Report.pdb
