@@ -12,3 +12,17 @@ C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Received\obj\Debug
 C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Received\obj\Debug\Goods_Received.Log_In.resources
 C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Received\obj\Debug\Goods_Received.Goods_Received_Details.resources
 C:\HOMEWORK\Nam 3 - HK1\C#\FINAL\Dan Phong Khoi Co.,Ltd\Goods_Received\obj\Debug\Goods_Received.Goods_Received_Note.resources
+C:\PTTP\University\Third_Year\Software_Engineer\Supplement-Facts-products\Goods_Received\bin\Debug\Goods_Received.exe.config
+C:\PTTP\University\Third_Year\Software_Engineer\Supplement-Facts-products\Goods_Received\bin\Debug\Goods_Received.exe
+C:\PTTP\University\Third_Year\Software_Engineer\Supplement-Facts-products\Goods_Received\bin\Debug\Goods_Received.pdb
+C:\PTTP\University\Third_Year\Software_Engineer\Supplement-Facts-products\Goods_Received\obj\Debug\Goods_Received.csproj.AssemblyReference.cache
+C:\PTTP\University\Third_Year\Software_Engineer\Supplement-Facts-products\Goods_Received\obj\Debug\Goods_Received.csproj.SuggestedBindingRedirects.cache
+C:\PTTP\University\Third_Year\Software_Engineer\Supplement-Facts-products\Goods_Received\obj\Debug\Goods_Received.Goods_Received_Details.resources
+C:\PTTP\University\Third_Year\Software_Engineer\Supplement-Facts-products\Goods_Received\obj\Debug\Goods_Received.Log_In.resources
+C:\PTTP\University\Third_Year\Software_Engineer\Supplement-Facts-products\Goods_Received\obj\Debug\Goods_Received.Goods_Received_Form.resources
+C:\PTTP\University\Third_Year\Software_Engineer\Supplement-Facts-products\Goods_Received\obj\Debug\Goods_Received.Goods_Received_Note.resources
+C:\PTTP\University\Third_Year\Software_Engineer\Supplement-Facts-products\Goods_Received\obj\Debug\Goods_Received.Properties.Resources.resources
+C:\PTTP\University\Third_Year\Software_Engineer\Supplement-Facts-products\Goods_Received\obj\Debug\Goods_Received.csproj.GenerateResource.cache
+C:\PTTP\University\Third_Year\Software_Engineer\Supplement-Facts-products\Goods_Received\obj\Debug\Goods_Received.csproj.CoreCompileInputs.cache
+C:\PTTP\University\Third_Year\Software_Engineer\Supplement-Facts-products\Goods_Received\obj\Debug\Goods_Received.exe
+C:\PTTP\University\Third_Year\Software_Engineer\Supplement-Facts-products\Goods_Received\obj\Debug\Goods_Received.pdb

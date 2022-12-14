@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Accountants">
+      <EntityTypeMapping TypeName="Model.Accountant">
+        <MappingFragment StoreEntitySet="Accountants">
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Agents">
+      <EntityTypeMapping TypeName="Model.Agent">
+        <MappingFragment StoreEntitySet="Agents">
+          <ScalarProperty Name="agentName" ColumnName="agentName" />
+          <ScalarProperty Name="phoneNumber" ColumnName="phoneNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Goods_Delivery_Note">
+      <EntityTypeMapping TypeName="Model.Goods_Delivery_Note">
+        <MappingFragment StoreEntitySet="Goods_Delivery_Note">
+          <ScalarProperty Name="deliveryId" ColumnName="deliveryId" />
+          <ScalarProperty Name="exportDate" ColumnName="exportDate" />
+          <ScalarProperty Name="accountantName" ColumnName="accountantName" />
+          <ScalarProperty Name="totalPrice" ColumnName="totalPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Goods_Received_Note">
+      <EntityTypeMapping TypeName="Model.Goods_Received_Note">
+        <MappingFragment StoreEntitySet="Goods_Received_Note">
+          <ScalarProperty Name="goodReceivedId" ColumnName="goodReceivedId" />
+          <ScalarProperty Name="importDate" ColumnName="importDate" />
+          <ScalarProperty Name="accountantName" ColumnName="accountantName" />
+          <ScalarProperty Name="totalPrice" ColumnName="totalPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products_Inventory">
+      <EntityTypeMapping TypeName="Model.Products_Inventory">
+        <MappingFragment StoreEntitySet="Products_Inventory">
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="productName" ColumnName="productName" />
+          <ScalarProperty Name="accountantName" ColumnName="accountantName" />
+          <ScalarProperty Name="importDate" ColumnName="importDate" />
+          <ScalarProperty Name="exportDate" ColumnName="exportDate" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="total" ColumnName="total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Receipt_Details">
+      <EntityTypeMapping TypeName="Model.Receipt_Details">
+        <MappingFragment StoreEntitySet="Receipt_Details">
+          <ScalarProperty Name="receiptId" ColumnName="receiptId" />
+          <ScalarProperty Name="customerName" ColumnName="customerName" />
+          <ScalarProperty Name="productName" ColumnName="productName" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="sellDate" ColumnName="sellDate" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="total" ColumnName="total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2a09ee40e18346e69dcc3775c1bcaef9" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.Accountant" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Agent" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Goods_Delivery_Note" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Goods_Received_Note" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Products_Inventory" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Receipt_Details" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK__Goods_Del__accou__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Goods_Rec__accou__35BCFE0A" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Products___accou__2B3F6F97" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

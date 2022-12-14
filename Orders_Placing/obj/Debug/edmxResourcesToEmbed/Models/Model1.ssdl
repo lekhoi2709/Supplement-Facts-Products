@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Accountants">
+    <Key>
+      <PropertyRef Name="userName" />
+    </Key>
+    <Property Name="userName" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Agents">
+    <Key>
+      <PropertyRef Name="agentName" />
+    </Key>
+    <Property Name="agentName" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="phoneNumber" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'Dan Phong Khoi Co.,Ltd.dbo.Goods_Delivery_Details' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Goods_Delivery_Details">
+          <Property Name="deliveryId" Type="varchar" MaxLength="10" />
+          <Property Name="productName" Type="varchar" MaxLength="30" />
+          <Property Name="productId" Type="varchar" MaxLength="10" />
+          <Property Name="quantity" Type="int" />
+          <Property Name="price" Type="float" />
+          <Property Name="total" Type="float" />
+        </EntityType>-->
+  <EntityType Name="Goods_Delivery_Note">
+    <Key>
+      <PropertyRef Name="deliveryId" />
+    </Key>
+    <Property Name="deliveryId" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="exportDate" Type="date" />
+    <Property Name="accountantName" Type="varchar" MaxLength="30" />
+    <Property Name="totalPrice" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'Dan Phong Khoi Co.,Ltd.dbo.Goods_Received_Details' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Goods_Received_Details">
+          <Property Name="goodReceivedId" Type="varchar" MaxLength="10" />
+          <Property Name="productName" Type="varchar" MaxLength="30" />
+          <Property Name="productId" Type="varchar" MaxLength="10" />
+          <Property Name="quantity" Type="int" />
+          <Property Name="price" Type="float" />
+          <Property Name="total" Type="float" />
+        </EntityType>-->
+  <EntityType Name="Goods_Received_Note">
+    <Key>
+      <PropertyRef Name="goodReceivedId" />
+    </Key>
+    <Property Name="goodReceivedId" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="importDate" Type="date" />
+    <Property Name="accountantName" Type="varchar" MaxLength="30" />
+    <Property Name="totalPrice" Type="float" />
+  </EntityType>
+  <EntityType Name="Products_Inventory">
+    <Key>
+      <PropertyRef Name="productId" />
+      <PropertyRef Name="productName" />
+    </Key>
+    <Property Name="productId" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="productName" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="accountantName" Type="varchar" MaxLength="30" />
+    <Property Name="importDate" Type="date" />
+    <Property Name="exportDate" Type="date" />
+    <Property Name="price" Type="float" />
+    <Property Name="quantity" Type="int" />
+    <Property Name="total" Type="float" />
+  </EntityType>
+  <EntityType Name="Receipt_Details">
+    <Key>
+      <PropertyRef Name="customerName" />
+      <PropertyRef Name="productId" />
+      <PropertyRef Name="sellDate" />
+    </Key>
+    <Property Name="receiptId" Type="varchar" MaxLength="10" />
+    <Property Name="customerName" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="productName" Type="varchar" MaxLength="30" />
+    <Property Name="productId" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="sellDate" Type="date" Nullable="false" />
+    <Property Name="quantity" Type="int" />
+    <Property Name="price" Type="float" />
+    <Property Name="total" Type="float" />
+  </EntityType>
+  <Association Name="FK__Goods_Del__accou__3B75D760">
+    <End Role="Accountants" Type="Self.Accountants" Multiplicity="0..1" />
+    <End Role="Goods_Delivery_Note" Type="Self.Goods_Delivery_Note" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accountants">
+        <PropertyRef Name="userName" />
+      </Principal>
+      <Dependent Role="Goods_Delivery_Note">
+        <PropertyRef Name="accountantName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errors Found During Generation:
+error 6004: The table 'Dan Phong Khoi Co.,Ltd.dbo.Goods_Delivery_Details' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__Goods_Del__deliv__3D5E1FD2" />-->
+  <Association Name="FK__Goods_Rec__accou__35BCFE0A">
+    <End Role="Accountants" Type="Self.Accountants" Multiplicity="0..1" />
+    <End Role="Goods_Received_Note" Type="Self.Goods_Received_Note" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accountants">
+        <PropertyRef Name="userName" />
+      </Principal>
+      <Dependent Role="Goods_Received_Note">
+        <PropertyRef Name="accountantName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errors Found During Generation:
+error 6004: The table 'Dan Phong Khoi Co.,Ltd.dbo.Goods_Received_Details' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__Goods_Rec__goodR__37A5467C" />-->
+  <Association Name="FK__Products___accou__2B3F6F97">
+    <End Role="Accountants" Type="Self.Accountants" Multiplicity="0..1" />
+    <End Role="Products_Inventory" Type="Self.Products_Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accountants">
+        <PropertyRef Name="userName" />
+      </Principal>
+      <Dependent Role="Products_Inventory">
+        <PropertyRef Name="accountantName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK__Receipt_D__produ__31EC6D26' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK__Receipt_D__produ__31EC6D26" />-->
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="Accountants" EntityType="Self.Accountants" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Agents" EntityType="Self.Agents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Goods_Delivery_Note" EntityType="Self.Goods_Delivery_Note" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Goods_Received_Note" EntityType="Self.Goods_Received_Note" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Products_Inventory" EntityType="Self.Products_Inventory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Receipt_Details" EntityType="Self.Receipt_Details" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Goods_Del__accou__3B75D760" Association="Self.FK__Goods_Del__accou__3B75D760">
+      <End Role="Accountants" EntitySet="Accountants" />
+      <End Role="Goods_Delivery_Note" EntitySet="Goods_Delivery_Note" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Goods_Rec__accou__35BCFE0A" Association="Self.FK__Goods_Rec__accou__35BCFE0A">
+      <End Role="Accountants" EntitySet="Accountants" />
+      <End Role="Goods_Received_Note" EntitySet="Goods_Received_Note" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Products___accou__2B3F6F97" Association="Self.FK__Products___accou__2B3F6F97">
+      <End Role="Accountants" EntitySet="Accountants" />
+      <End Role="Products_Inventory" EntitySet="Products_Inventory" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

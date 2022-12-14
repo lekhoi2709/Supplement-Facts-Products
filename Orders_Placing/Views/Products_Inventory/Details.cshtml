@@ -1,0 +1,66 @@
+﻿@model Orders_Placing.Models.Products_Inventory
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Products_Inventory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.importDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.importDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.exportDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.exportDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.total)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.total)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accountant.password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accountant.password)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

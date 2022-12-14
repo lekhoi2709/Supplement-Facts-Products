@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Accountant">
+    <Key>
+      <PropertyRef Name="userName" />
+    </Key>
+    <Property Name="userName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Goods_Delivery_Note" Relationship="Self.FK__Goods_Del__accou__3B75D760" FromRole="Accountants" ToRole="Goods_Delivery_Note" />
+    <NavigationProperty Name="Goods_Received_Note" Relationship="Self.FK__Goods_Rec__accou__35BCFE0A" FromRole="Accountants" ToRole="Goods_Received_Note" />
+    <NavigationProperty Name="Products_Inventory" Relationship="Self.FK__Products___accou__2B3F6F97" FromRole="Accountants" ToRole="Products_Inventory" />
+  </EntityType>
+  <EntityType Name="Agent">
+    <Key>
+      <PropertyRef Name="agentName" />
+    </Key>
+    <Property Name="agentName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phoneNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Goods_Delivery_Note">
+    <Key>
+      <PropertyRef Name="deliveryId" />
+    </Key>
+    <Property Name="deliveryId" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="exportDate" Type="DateTime" Precision="0" />
+    <Property Name="accountantName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="totalPrice" Type="Double" />
+    <NavigationProperty Name="Accountant" Relationship="Self.FK__Goods_Del__accou__3B75D760" FromRole="Goods_Delivery_Note" ToRole="Accountants" />
+  </EntityType>
+  <EntityType Name="Goods_Received_Note">
+    <Key>
+      <PropertyRef Name="goodReceivedId" />
+    </Key>
+    <Property Name="goodReceivedId" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="importDate" Type="DateTime" Precision="0" />
+    <Property Name="accountantName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="totalPrice" Type="Double" />
+    <NavigationProperty Name="Accountant" Relationship="Self.FK__Goods_Rec__accou__35BCFE0A" FromRole="Goods_Received_Note" ToRole="Accountants" />
+  </EntityType>
+  <EntityType Name="Products_Inventory">
+    <Key>
+      <PropertyRef Name="productId" />
+      <PropertyRef Name="productName" />
+    </Key>
+    <Property Name="productId" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="productName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="accountantName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="importDate" Type="DateTime" Precision="0" />
+    <Property Name="exportDate" Type="DateTime" Precision="0" />
+    <Property Name="price" Type="Double" />
+    <Property Name="quantity" Type="Int32" />
+    <Property Name="total" Type="Double" />
+    <NavigationProperty Name="Accountant" Relationship="Self.FK__Products___accou__2B3F6F97" FromRole="Products_Inventory" ToRole="Accountants" />
+  </EntityType>
+  <EntityType Name="Receipt_Details">
+    <Key>
+      <PropertyRef Name="customerName" />
+      <PropertyRef Name="productId" />
+      <PropertyRef Name="sellDate" />
+    </Key>
+    <Property Name="receiptId" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="customerName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="productName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="productId" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sellDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="quantity" Type="Int32" />
+    <Property Name="price" Type="Double" />
+    <Property Name="total" Type="Double" />
+  </EntityType>
+  <Association Name="FK__Goods_Del__accou__3B75D760">
+    <End Role="Accountants" Type="Self.Accountant" Multiplicity="0..1" />
+    <End Role="Goods_Delivery_Note" Type="Self.Goods_Delivery_Note" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accountants">
+        <PropertyRef Name="userName" />
+      </Principal>
+      <Dependent Role="Goods_Delivery_Note">
+        <PropertyRef Name="accountantName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Goods_Rec__accou__35BCFE0A">
+    <End Role="Accountants" Type="Self.Accountant" Multiplicity="0..1" />
+    <End Role="Goods_Received_Note" Type="Self.Goods_Received_Note" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accountants">
+        <PropertyRef Name="userName" />
+      </Principal>
+      <Dependent Role="Goods_Received_Note">
+        <PropertyRef Name="accountantName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Products___accou__2B3F6F97">
+    <End Role="Accountants" Type="Self.Accountant" Multiplicity="0..1" />
+    <End Role="Products_Inventory" Type="Self.Products_Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accountants">
+        <PropertyRef Name="userName" />
+      </Principal>
+      <Dependent Role="Products_Inventory">
+        <PropertyRef Name="accountantName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Accountants" EntityType="Self.Accountant" />
+    <EntitySet Name="Agents" EntityType="Self.Agent" />
+    <EntitySet Name="Goods_Delivery_Note" EntityType="Self.Goods_Delivery_Note" />
+    <EntitySet Name="Goods_Received_Note" EntityType="Self.Goods_Received_Note" />
+    <EntitySet Name="Products_Inventory" EntityType="Self.Products_Inventory" />
+    <EntitySet Name="Receipt_Details" EntityType="Self.Receipt_Details" />
+    <AssociationSet Name="FK__Goods_Del__accou__3B75D760" Association="Self.FK__Goods_Del__accou__3B75D760">
+      <End Role="Accountants" EntitySet="Accountants" />
+      <End Role="Goods_Delivery_Note" EntitySet="Goods_Delivery_Note" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Goods_Rec__accou__35BCFE0A" Association="Self.FK__Goods_Rec__accou__35BCFE0A">
+      <End Role="Accountants" EntitySet="Accountants" />
+      <End Role="Goods_Received_Note" EntitySet="Goods_Received_Note" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Products___accou__2B3F6F97" Association="Self.FK__Products___accou__2B3F6F97">
+      <End Role="Accountants" EntitySet="Accountants" />
+      <End Role="Products_Inventory" EntitySet="Products_Inventory" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

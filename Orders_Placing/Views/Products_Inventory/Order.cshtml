@@ -1,0 +1,22 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <h1>
+            @foreach (var item in Model) {
+                @Html.Display(item)
+            }
+        </h1>
+        <input />
+    </div>
+</body>
+</html>
